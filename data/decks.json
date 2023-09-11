@@ -1,0 +1,19 @@
+{
+  "groups": [
+    { "id": "k", "title": "K Level Flashcards" },
+    { "id": "lg", "title": "Let's Go Flashcards" }
+  ], 
+  "k": [
+    { "id": "emotions", "title": "Emotions", "icon": "" },
+    { "id": "opposites", "title": "Opposites", "icon": "" }
+  ], 
+  "lg": [
+    { "id": "letsbegin", "title": "Let's Begin", "icon": "" },
+    { "id": "letsgo1", "title": "Let's Go 1", "icon": "" },
+    { "id": "letsgo2", "title": "Let's Go 2", "icon": "" },
+    { "id": "letsgo3", "title": "Let's Go 3", "icon": "" },
+    { "id": "letsgo4", "title": "Let's Go 4", "icon": "" },
+    { "id": "letsgo5", "title": "Let's Go 5", "icon": "" },
+    { "id": "letsgo6", "title": "Let's Go 6", "icon": "" }
+  ]
+}
