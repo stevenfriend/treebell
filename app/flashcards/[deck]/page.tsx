@@ -14,19 +14,19 @@ export default async function Deck({ params }: {params: { deck: string }} ) {
   const deck = await getDeck(params.deck);
 
   return (
-    <>
-      <h1>
+    <main className="flex flex-col rounded shadow p-6 m-auto w-3/4 bg-white">
+      <h1 className="text-center text-4xl">
         {deck.title}
       </h1>
       {deck.units &&
         <ul>
           {deck.units.map((unit: string) => (
-            <li key={unit}>
+            <li className="py-6 text-3xl" key={unit}>
               {unit}
             </li>
           ))}
         </ul>
       }
-  </>
+  </main>
   )
 }

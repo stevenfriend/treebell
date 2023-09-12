@@ -1,11 +1,16 @@
 {
   "groups": [
     { "id": "k", "title": "K Level Flashcards" },
+    { "id": "e", "title": "E Level Flashcards" },
     { "id": "lg", "title": "Let's Go Flashcards" }
   ], 
   "k": [
     { "id": "emotions", "title": "Emotions", "icon": "" },
     { "id": "opposites", "title": "Opposites", "icon": "" }
+  ], 
+  "e": [
+    { "id": "alphabet-mg", "title": "Alphabet Memory Game", "icon": "" },
+    { "id": "occupation-mg", "title": "Occupation Memory Game", "icon": "" }
   ], 
   "lg": [
     { "id": "letsbegin", "title": "Let's Begin", "icon": "" },
