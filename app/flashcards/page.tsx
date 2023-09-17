@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import Item from '../components/Item'
+import Image from 'next/image'
 import decks from '../../data/decks.json'
 
 export default async function Flashcards() {
@@ -13,9 +15,9 @@ export default async function Flashcards() {
         return(
         <div key={id}>
           <h2 className="py-6 text-3xl">{title}</h2>
-          <ul className='grid grid-cols-5 gap-3'>
-            {group.map(({ id, title }: { id: string, title: string }) => (
-              <li key={id}><Link href={`/flashcards/${id}`}>{title}</Link></li>
+          <ul className='grid grid-cols-fluid gap-3'>
+            {group.map(({ id, title, icon }: { id: string, title: string, icon: string }) => (
+              <Item id={id} link={`/flashcards/${id}`} text={title} image={`${process.env.basePath}/${icon}`} />
             ))}
           </ul>
         </div>

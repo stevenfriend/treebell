@@ -4,16 +4,19 @@
 
 const nextConfig = {
   output: 'export',
-  basePath: '/treebell',
-
+ 
   // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
   trailingSlash: true,
- 
-  // Optional: Prevent automatic `/me` -> `/me/`, instead preserve `href`
-  // skipTrailingSlashRedirect: true,
- 
-  // Optional: Change the output directory `out` -> `dist`
-  // distDir: 'dist',
+
+  basePath: '/treebell',
+  
+  env: {
+    basePath: '/treebell',
+  },
+
+  images: { 
+    unoptimized: true 
+  }
 }
  
 module.exports = nextConfig
