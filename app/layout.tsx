@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} relative min-h-screen`}>
+      <body className={`${inter.className} relative min-h-screen overflow-y-scroll`}>
         <nav className="flex justify-center p-6 space-x-2">
           <Link href="/">Treebell Online</Link><p>|</p> 
           <Link href="/flashcards">Flashcards</Link><p>|</p> 

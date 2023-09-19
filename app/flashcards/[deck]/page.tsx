@@ -1,32 +1,42 @@
+import CardGroup from '@/app/components/CardGroup'
 import decks from '../../../data/decks.json'
 import { getDeck } from '../../../lib/decks'
+import Card from '@/app/components/Card'
+import SideBar from '@/app/components/SideBar'
 
 // Return a list of `params` to populate the [deck] dynamic segment
 export async function generateStaticParams() {
-  const groups = decks.groups.map(group => group.id)
+  const hat = decks.groups.map(group => group.id)
   // @ts-ignore
-  const deckList = groups.flatMap(group => decks[group])
+  const deckList = hat.flatMap(group => decks[group])
   const deckIDs = deckList.map(deck => ({ deck: deck.id, }))
   return deckIDs
 }
 
 export default async function Deck({ params }: {params: { deck: string }} ) {
-  const deck = await getDeck(params.deck);
+  const deck = await getDeck(params.deck)
 
   return (
-    <main className="flex flex-col rounded shadow p-6 m-auto w-3/4 bg-white">
-      <h1 className="text-center text-4xl">
-        {deck.title}
-      </h1>
-      {deck.units &&
-        <ul>
-          {deck.units.map((unit: string) => (
-            <li className="py-6 text-3xl" key={unit}>
-              {unit}
-            </li>
-          ))}
-        </ul>
-      }
-  </main>
+    <>
+      <SideBar />
+      <main className="flex flex-col rounded shadow mx-auto mb-6 p-6 w-11/12 sm:w-3/4 bg-white">
+        <h1 className="text-center text-4xl">
+          {deck.title}
+        </h1>
+        {deck.groups ? deck.groups.map((group: string, index: number) => {
+          // @ts-ignore
+          const cardGroup = deck.cards.filter((card) => parseInt(card.group) == index)
+          // @ts-ignore
+          const cards = cardGroup.map(card => 
+            <Card id={card.id} text={card.text} image={`${process.env.basePath}/${params.deck}/${card.image}`} />
+          )
+          return (<CardGroup group={group}>{cards}</CardGroup>)
+          // @ts-ignore
+        }) : <ul className='grid grid-cols-fluid gap-3'>{deck.cards.map(card => 
+          <Card id={card.id} text={card.text} image={`${process.env.basePath}/${params.deck}/${card.image}`} />
+        )}</ul>
+        }
+      </main> 
+    </>
   )
 }

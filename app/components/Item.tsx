@@ -5,11 +5,13 @@ export default function Item({ id, link, text, image }: { id: string, link: stri
   return (
     <li key={id} className='text-center'>
       <Link href={link}>
-        <Image className='m-2 rounded-lg'
-          src={image}
-          width={500}
-          height={500}
-          alt={text}/>
+        <div className='box-border m-2'>
+          <Image className='rounded-lg'
+            src={image}
+            width={600}
+            height={600}
+            alt={text}/>
+        </div>
         {text}
       </Link>
     </li>

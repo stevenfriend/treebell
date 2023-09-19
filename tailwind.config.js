@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       gridTemplateColumns: {
-        'fluid': 'repeat(auto-fill, minmax(min(10rem, 100%), 1fr))'
+        'fluid': 'repeat(auto-fill, minmax(min(11rem, 100%), 1fr))'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
