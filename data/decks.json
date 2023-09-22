@@ -5,12 +5,10 @@
     { "id": "lg", "title": "Let's Go Flashcards" }
   ], 
   "k": [
-    { "id": "emotions", "title": "Emotions", "icon": "icons/alphabet-mg.png" },
-    { "id": "opposites", "title": "Opposites", "icon": "icons/alphabet-mg.png" }
+
   ], 
   "e": [
-    { "id": "alphabet-mg", "title": "Alphabet Memory Game", "icon": "icons/alphabet-mg.png" },
-    { "id": "occupation-mg", "title": "Occupation Memory Game", "icon": "icons/alphabet-mg.png" }
+    { "id": "alphabet-mg", "title": "Alphabet Memory Game", "icon": "icons/alphabet-mg.png" }
   ], 
   "lg": [
     { "id": "letsbegin", "title": "Let's Begin", "icon": "icons/lb1.jpg" },

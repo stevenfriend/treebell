@@ -9,7 +9,7 @@ export async function generateStaticParams() {
   const hat = decks.groups.map(group => group.id)
   // @ts-ignore
   const deckList = hat.flatMap(group => decks[group])
-  const deckIDs = deckList.map(deck => ({ deck: deck.id, }))
+  const deckIDs = deckList.map(deck => ({ deck: deck.id }))
   return deckIDs
 }
 

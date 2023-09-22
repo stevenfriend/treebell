@@ -11,13 +11,11 @@ export default function Card({ id, text, image }: { id: string, text: string, im
   
   return (
     <li key={id} className='text-center'>
-      <div className='box-border m-2'>
-        <Image className='rounded-lg'
-          src={image}
-          width={600}
-          height={600}
-          alt={text}/>
-      </div>
+      <Image className='rounded-lg'
+        src={image}
+        width={600}
+        height={600}
+        alt={text}/>
       <span className='text-xl'>{text}</span>
     </li>
   )
