@@ -5,7 +5,7 @@
     { "id": "lg", "title": "Let's Go Flashcards" }
   ], 
   "k": [
-
+    { "id": "halloween-abc", "title": "Halloween ABC Cards", "icon": "icons/alphabet-mg.png" }
   ], 
   "e": [
     { "id": "alphabet-mg", "title": "Alphabet Memory Game", "icon": "icons/alphabet-mg.png" }

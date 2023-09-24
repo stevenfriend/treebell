@@ -1,4 +1,4 @@
-import CardGroup from '@/app/components/CardGroup'
+import Group from '@/app/components/Group'
 import decks from '../../../data/decks.json'
 import { getDeck } from '../../../lib/decks'
 import Card from '@/app/components/Card'
@@ -30,11 +30,14 @@ export default async function Deck({ params }: {params: { deck: string }} ) {
           const cards = cardGroup.map(card => 
             <Card id={card.id} text={card.text} image={`${process.env.basePath}/${params.deck}/${card.image}`} />
           )
-          return (<CardGroup group={group}>{cards}</CardGroup>)
-          // @ts-ignore
-        }) : <ul className='grid grid-cols-fluid gap-3'>{deck.cards.map(card => 
-          <Card id={card.id} text={card.text} image={`${process.env.basePath}/${params.deck}/${card.image}`} />
-        )}</ul>
+          return (<Group group={group}>{cards}</Group>)
+        }) : 
+        <Group>
+          {// @ts-ignore
+          deck.cards.map(card => 
+            <Card id={card.id} text={card.text} image={`${process.env.basePath}/${params.deck}/${card.image}`} />
+          )}
+        </Group>
         }
       </main> 
     </>

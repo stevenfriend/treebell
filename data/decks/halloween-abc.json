@@ -1,0 +1,31 @@
+{
+  "title": "Halloween ABC Cards",
+  "cards": [
+    { "text": "apple", "image": "apple.png" },
+    { "text": "bat", "image": "bat.png" },
+    { "text": "cat", "image": "cat.png" },
+    { "text": "dinosaur", "image": "dinosaur.png" },
+    { "text": "Eeeek!", "image": "Eeeek!.png" },
+    { "text": "Frankenstein", "image": "Frankenstein.png" },
+    { "text": "ghost", "image": "ghost.png" },
+    { "text": "haunted house", "image": "haunted house.png" },
+    { "text": "insect", "image": "insect.png" },
+    { "text": "jack-o'-lantern", "image": "jack-o'-lantern.png" },
+    { "text": "king", "image": "king.png" },
+    { "text": "lightning", "image": "lightning.png" },
+    { "text": "mummy", "image": "mummy.png" },
+    { "text": "night", "image": "night.png" },
+    { "text": "October", "image": "October.png" },
+    { "text": "pumpkin pie", "image": "pumpkin pie.png" },
+    { "text": "queen", "image": "queen.png" },
+    { "text": "robot", "image": "robot.png" },
+    { "text": "spider", "image": "spider.png" },
+    { "text": "trick or treat", "image": "trick or treat.png" },
+    { "text": "unicorn", "image": "unicorn.png" },
+    { "text": "vampire", "image": "vampire.png" },
+    { "text": "witch", "image": "witch.png" },
+    { "text": "X-ray", "image": "X-ray.png" },
+    { "text": "Yummy!", "image": "Yummy!.png" },
+    { "text": "zombie", "image": "zombie.png" }
+  ]
+}
