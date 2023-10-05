@@ -1,0 +1,23 @@
+{
+  "title": "Places Around Town",
+  "cards": [
+    { "text": "bakery", "image": "bakery.png" },
+    { "text": "bank", "image": "bank.png" },
+    { "text": "bus station", "image": "bus station.png" },
+    { "text": "cleaners", "image": "cleaners.png" },
+    { "text": "coffee shop", "image": "coffee shop.png" },
+    { "text": "fast-food restaurant", "image": "fast-food restaurant.png" },
+    { "text": "flower shop", "image": "flower shop.png" },
+    { "text": "gas station", "image": "gas station.png" },
+    { "text": "grocery store", "image": "grocery store.png" },
+    { "text": "hardware store", "image": "hardware store.png" },
+    { "text": "hospital", "image": "hospital.png" },
+    { "text": "laundromat", "image": "laundromat.png" },
+    { "text": "library", "image": "library.png" },
+    { "text": "park", "image": "park.png" },
+    { "text": "post office", "image": "post office.png" },
+    { "text": "super market", "image": "super market.png" },
+    { "text": "train station", "image": "train station.png" },
+    { "text": "video store", "image": "video store.png" }
+  ]
+}

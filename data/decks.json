@@ -8,7 +8,8 @@
     { "id": "halloween-abc", "title": "Halloween ABC Cards", "icon": "icons/alphabet-mg.png" }
   ], 
   "e": [
-    { "id": "alphabet-mg", "title": "Alphabet Memory Game", "icon": "icons/alphabet-mg.png" }
+    { "id": "alphabet-mg", "title": "Alphabet Memory Game", "icon": "icons/alphabet-mg.png" },
+    { "id": "places-around-town", "title": "Places Around Town", "icon": "icons/alphabet-mg.png" }
   ], 
   "lg": [
     { "id": "letsbegin", "title": "Let's Begin", "icon": "icons/lb1.jpg" },
