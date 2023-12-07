@@ -4,8 +4,7 @@ export interface Props {
   children: ReactNode
 }
 
-export default async function CardGroup ({ children }: Props) {
-  await new Promise((resolve) => setTimeout(resolve, 1000))
+export default function CardGroup ({ children }: Props) {
 
   return (
     <ul className='grid grid-cols-fluid gap-3'>{children}</ul>

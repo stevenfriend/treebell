@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link'
 import Image from 'next/image'
 import { ReactNode } from 'react'
 
@@ -13,12 +12,11 @@ export default function Card({ id, text, image }: { id: string, text: string, im
   
   return (
     <li key={id} className='text-center'>
-      <Image className='rounded-lg'
+      <Image className='rounded-lg' onClick={() => console.log(`Clicked ${text}`)}
         src={image}
         width={400}
         height={400}
         alt={text}
-        onLoadingComplete={(img) => console.log(`${text} has loaded`)}
       />        
       <span className='text-xl'>{text}</span>
     </li>
